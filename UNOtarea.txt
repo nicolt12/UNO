@@ -1,0 +1,4 @@
+Desarrollare una web de tienda de calzados
+
+Diferencia entre Git: Es un sistema de control de versiones. Lleva un registro de todos los cambios y avances de tu proyecto. 
+GitHub: Es un servicio que te ayuda a almacenar tu proyecto en la nube.
