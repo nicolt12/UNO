@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer pagina</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+    <body> 
+        <!-- Info Superior -->
+        <header id="arriba">
+            <nav id="ArribaDeTodo"> 
+                  <ul class="info">
+                    <li> <a href="index.html"> Quienes Somos</a> </li>
+                    <li> <a href="index.html"> Info </a> </li>
+                    <li> <a href="index.html"> Caracteristicas</a> </li> 
+                  </ul>
+                </nav>
+            <nav>
+                <!-- Primer Titulo -->
+                 <h1 class="Saludo">  Hola  </h1>
+        
+                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas illum eius ipsum porro voluptates ex voluptatem, quod perferendis dolore repellendus earum quae id impedit iure, rem natus quo magnam doloribus!</p>
+                    <!--Opciones  -->
+                    <ol class="MenuOpcional">
+                        <li> <a href="index.html">Opcion </a> </li>
+                        <li> <a href="index.html">Opcion </a> </li>
+                        <li> <a href="index.html">Opcion </a> </li>
+                    </ol>
+            </nav>  
+        </header>
+            <!-- Segundo Titulo -->
+        <p id="parrafo-especial">Hola Soy Nico <br> y tengo 27 años...</p>
+        
+    
+        <!-- Cita -->
+        <p class="parrafos">''Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, obcaecati aspernatur a, dolores libero incidunt fuga sed eos veritatis iusto consequuntur voluptas assumenda laudantium consequatur? Ex officiis maxime ratione numquam?''
+        </p>
+        <!-- Imagen -->
+       <img class="Dios" src="dios.jpeg" alt="Dios"> 
+        <!-- Link -->
+        <div id="Link">
+
+             <a class="link" href="https://g.co/kgs/CSmKaP" target="_blank">¿Que es D10S?</a>
+    
+        </div>
+        <!-- Final -->
+        <footer>
+            <h2 class="SegundoTitulo"> No vemooo </h2> 
+            <p class="Parrafito">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolore aliquid, esse placeat tempora provident alias autem nulla velit atque aspernatur hic aperiam sunt! Hic quod molestiae voluptatum ratione alias!</p>
+        </footer>
+    </body>
+</html>
+
