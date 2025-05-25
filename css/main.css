@@ -474,7 +474,7 @@ footer .copyright-icons-container {
 }
 
 #testimonial .testimonial-background {
-  background-image: url("/img/croswal.jpg");
+  background-image: url("img/croswal.jpg");
   background-size: cover;
   background-position: center;
   padding: 100px 20px;
