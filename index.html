@@ -1,100 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primer pagina</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
-    <!----scroll reveal--->
-<script src="https://unpkg.com/scrollreveal"></script>
-</head>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Bootstrap Website Two</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 
-    <body> 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Tienda Online</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- BOOTSTRAP 5 -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (activa el botón hamburguesa) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- font awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+   <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid d-flex align-items-center justify-content-between position-relative">
+
+    <!-- LOGO -->
+    <div class="navbar-logo">
+      <i class="fas fa-th logo-icon"></i>
+    </div>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
+
+    <!-- MENÚ CENTRADO -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+      <ul class="navbar-nav navbar-center text-center">
+
+        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="#winter-new-arrivals">Novedades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Sobre nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+
+      <!-- ICONOS MÓVIL (solo visible en móviles) -->
+    <div class="navbar-icons-mobile d-lg-none mt-3">
+  <div class="search-container">
+    <i class="fas fa-search search-icon"></i>
+    <input type="text" class="search-input" placeholder="Buscar..." />
+  </div>
+  <i class="fas fa-shopping-cart"></i>
+  <i class="far fa-user"></i>
+</div>
+
     </div>
+
+    <!-- ICONOS DESKTOP (oculto en móviles) -->
+    <div class="navbar-icons d-none d-lg-flex align-items-center">
+      <div class="search-container">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" class="search-input" placeholder="Buscar..." />
+      </div>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="far fa-user"></i>
+    </div>
+
   </div>
 </nav>
-        <!-- Info Superior -->
-        <header id="arriba">
-            <nav id="ArribaDeTodo"> 
-                  <ul class="info">
-                    <li> <a href="index.html"> Quienes Somos</a> </li>
-                    <li> <a href="index.html"> Info </a> </li>
-                    <li> <a href="index.html"> Caracteristicas</a> </li> 
-                  </ul>
-                </nav>
-            <nav>
-                <!-- Primer Titulo -->
-                 <h1 class="Saludo">  Hola  </h1>
-        
-                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas illum eius ipsum porro voluptates ex voluptatem, quod perferendis dolore repellendus earum quae id impedit iure, rem natus quo magnam doloribus!</p>
-                    <!--Opciones  -->
-                    <ol class="MenuOpcional">
-                        <li> <a href="index.html">Opcion </a> </li>
-                        <li> <a href="index.html">Opcion </a> </li>
-                        <li> <a href="index.html">Opcion </a> </li>
-                    </ol>
-            </nav>  
-        </header>
-            <!-- Segundo Titulo -->
-        <p id="parrafo-especial">Hola Soy Nico <br> y tengo 27 años...</p>
-        
-    
-        <!-- Cita -->
-        <p class="parrafos">''Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, obcaecati aspernatur a, dolores libero incidunt fuga sed eos veritatis iusto consequuntur voluptas assumenda laudantium consequatur? Ex officiis maxime ratione numquam?''
-        </p>
-        <!-- Imagen -->
-       <img class="Dios" src="dios.jpeg" alt="Dios"> 
-        <!-- Link -->
-        <div id="Link">
 
-             <a class="link" href="https://g.co/kgs/CSmKaP" target="_blank">¿Que es D10S?</a>
+ <div class="page-wrapper">
+    <!-- testimonio -->
+  <section id="testimonial">
+  <div class="testimonial-background">
+    <div class="container">
+      <div class="testimonial-content">
+        <p class="h2">
+          Lorem, ipsum dolor.</p>   
+      </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- SECTION -->
     
+<section id="header">
+  <div class="container">
+    <!-- Primera fila -->
+    <div class="row mb-5">
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <img src="img/image3.jpg" class="header-img img-fluid">
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="text-box-right text-start">
+          <h1 class="display-4">Lorem, ipsum dolor.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quibusdam ex exercitationem consequatur ratione illum voluptate, omnis sit recusandae molestiae itaque quasi eius iste minima similique. Minima consequatur consectetur totam!</p>
+          <a href="#" class="btn btn-outline-secondary header-btn">Ver más</a>
         </div>
-        <!-- Final -->
-        <footer>
-            <h2 class="SegundoTitulo"> No vemooo </h2> 
-            <p class="Parrafito">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolore aliquid, esse placeat tempora provident alias autem nulla velit atque aspernatur hic aperiam sunt! Hic quod molestiae voluptatum ratione alias!</p>
-        </footer>
-        
-<!---bootstrap script--->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+      </div>
+    </div>
 
-    </body>
+    <!-- Segunda fila (invertida) -->
+    <div class="row flex-row-reverse mb-5">
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <img src="img/image2.jpg" class="header-img img-fluid">
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="text-box-left text-end">
+          <h1 class="display-4">Lorem, ipsum dolor.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora excepturi voluptates quam esse iusto aperiam recusandae error possimus totam exercitationem in modi, fugiat delectus, nisi sint quas quos? Deserunt, vero!</p>
+          <a href="#" class="btn btn-outline-secondary header-btn">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tercera fila -->
+    <div class="row mb-5">
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <img src="img/image1.jpg" class="header-img img-fluid">
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="text-box-right text-start">
+          <h1 class="display-4">Lorem, ipsum dolor.</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti officiis similique ipsum repudiandae? Porro iusto laborum iste autem quidem at laudantium eaque magnam ab, ducimus optio fugiat minima obcaecati. Cupiditate.</p>
+          <a href="#" class="btn btn-outline-secondary header-btn">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="info-two">
+  <div class="container">
+    <div class="info-grid">
+      <div class="info-item">
+        <i class="fas fa-globe"></i>
+        <h3>Envío internacional gratuito</h3>
+        <p>En todos los pedidos superiores a $100</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-undo-alt"></i>
+        <h3>30 días para devolver</h3>
+        <p>Devolver tu pedido es fácil y gratis: solo envíanos un correo</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-gift"></i>
+        <h3>Tarjetas de regalo</h3>
+        <p>Regalá algo extraordinario con nuestras tarjetas de regalo</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <h3>Necesitás ayuda? ¡Preguntanos!</h3>
+        <p>O llamanos al: <br>+11 1111111</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="winter-new-arrivals" class="winter-container">
+  <div class="container">
+    <div class="winter-grid">
+      <!-- Imagen izquierda -->
+      <div class="winter-img-col">
+        <img src="/img/pexels-aj-collins-artistry.jpg" alt="Colección Invierno" class="winter-img">
+      </div>
+
+      <!-- Texto centrado -->
+      <div class="winter-text-col">
+        <div class="winter-text-wrapper">
+          <h2 class="winter-title">Winter new arrivals</h2>
+          <p class="winter-subtitle">New season<br>New Collection</p>
+          <a href="#" class="btn btn-outline-light winter-btn">Compra ahora</a>
+        </div>
+      </div>
+
+      <!-- Imagen derecha -->
+      <div class="winter-img-col">
+        <img src="/img/pexels-jibarofoto.jpg" alt="Colección Invierno" class="winter-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer id="contact" class="bg-dark">
+  <div class="container">
+
+    <!-- Sección Informativa -->
+    <div class="row ">
+      <div class="col-md-4">
+        <h5>Información</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none ">Sobre nosotros</a></li>
+          <li><a href="#" class="text-decoration-none">Empleos</a></li>
+          <li><a href="#" class="text-decoration-none ">Prensa</a></li>
+          <li><a href="#" class="text-decoration-none ">Afiliados</a></li>
+          <li><a href="#" class="text-decoration-none ">Información corporativa</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Categorías</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none">Ejercicio</a></li>
+          <li><a href="#" class="text-decoration-none ">Gimnasio y fitness</a></li>
+          <li><a href="#" class="text-decoration-none">Nutrición</a></li>
+          <li><a href="#" class="text-decoration-none ">Aire libre</a></li>
+          <li><a href="#" class="text-decoration-none ">Entrenamiento de fuerza</a></li>
+          <li><a href="#" class="text-decoration-none ">Suplementos</a></li>
+          <li><a href="#" class="text-decoration-none ">Deportes en equipo</a></li>
+          <li><a href="#" class="text-decoration-none ">Entrenamiento y deporte</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Ayuda</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none ">Estado del pedido</a></li>
+          <li><a href="#" class="text-decoration-none ">Envío y entrega</a></li>
+          <li><a href="#" class="text-decoration-none ">Devoluciones</a></li>
+          <li><a href="#" class="text-decoration-none ">Opciones de pago</a></li>
+          <li><a href="#" class="text-decoration-none ">Contáctanos</a></li>
+        </ul>
+      </div>
+
+      
+    </div>
+
+    <!-- Mapa + Formulario -->
+    <div class="form-map-wrapper">
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.271716471293!2d-58.70225382489539!3d-34.67309116116411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc07979e48029%3A0x26e49dba38d4c77!2sUno!5e0!3m2!1ses!2sar!4v1747325092100!5m2!1ses!2sar" height="100%" width="100%" style="border:0;" allowfullscreen></iframe>
+      </div>
+
+<form class="card p-4 custom-contact-form">
+        <div class="form-group">
+          <label for="name" class="text-white">Nombre</label>
+          <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email" class="text-white">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message" class="text-white">Mensaje</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-light btn-block mt-3">Enviar</button>
+  </form>
+  </div>
+    <!-- Línea blanca -->
+    <hr style="border: none; border-top: 2px solid #ffffff; margin-top: 2rem; margin-bottom: 1rem;">
+
+    <!-- Copyright -->
+    <div class="copyright-icons-container" id="contacto">
+      <p class="mb-0 text-center text-md-start">&copy; 2025 UNO. Todos los derechos reservados.</p>
+      <div class="text-center text-md-end">
+        <a href="https://wa.me/5491234567890" class="text-light me-3"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    <!-- SCRIPTS -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navbarCollapse = document.getElementById('navbarMenu');
+    if (!navbarCollapse) return;
+
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+
+    document.querySelectorAll('#navbarMenu .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navbarCollapse.classList.contains('show')) {
+          bsCollapse.hide();
+        }
+      });
+    });
+
+    const searchToggles = document.querySelectorAll('.search-icon');
+    searchToggles.forEach(toggle => {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        const container = this.closest('.search-container');
+        if (container) {
+          if (container.classList.contains('d-none')) {
+            container.classList.remove('d-none');
+            void container.offsetWidth;
+            container.classList.add('show');
+          } else {
+            container.classList.remove('show');
+            setTimeout(() => {
+              container.classList.add('d-none');
+            }, 600);
+          }
+        }
+      });
+    });
+  });
+</script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  window.sr = ScrollReveal();
+
+  sr.reveal('.navbar', {
+    duration: 2000,
+    origin: 'bottom'
+  });
+
+  sr.reveal('.header-img', {
+    duration: 2000,
+    origin: 'top',
+    distance: '200px'
+  });
+
+  sr.reveal('.text-box-right', {
+    duration: 1800,
+    origin: 'right',
+    distance: '250px',
+    easing: 'ease-in-out',
+    opacity: 0,
+    delay: 300
+  });
+
+  sr.reveal('.text-box-left', {
+    duration: 1800,
+    origin: 'left',
+    distance: '250px',
+    easing: 'ease-in-out',
+    opacity: 0,
+    delay: 300
+  });
+
+  sr.reveal('#testimonial div', {
+    duration: 2000,
+    origin: 'left',
+    distance: '300px',
+    viewFactor: 0.2
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+    </div>
+  </body>
 </html>
-
