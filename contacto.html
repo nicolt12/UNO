@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contacto - Proyecto UNO Nicolas Herrera</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- BOOTSTRAP 5 -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid d-flex align-items-center justify-content-between position-relative">
+    <!-- LOGO -->
+    <div class="navbar-logo">
+      <i class="fas fa-th logo-icon"></i>
+    </div>
+    <!-- BOTÓN HAMBURGUESA -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- MENÚ CENTRADO -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+      <ul class="navbar-nav navbar-center text-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="#winter-new-arrivals">Novedades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Sobre nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+      <!-- ICONOS MÓVIL (solo visible en móviles) -->
+    <div class="navbar-icons-mobile d-lg-none mt-3">
+  <div class="search-container">
+    <i class="fas fa-search search-icon"></i>
+    <input type="text" class="search-input" placeholder="Buscar..." >
+  </div>
+  <i class="fas fa-shopping-cart"></i>
+  <i class="far fa-user"></i>
+</div>
+    </div>
+    <!-- ICONOS DESKTOP (oculto en móviles) -->
+    <div class="navbar-icons d-none d-lg-flex align-items-center">
+      <div class="search-container">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" class="search-input" placeholder="Buscar..." >
+      </div>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="far fa-user"></i>
+    </div>
+
+  </div>
+</nav>
+
+    <div class="page-wrapper">
+      <!-- SECCIÓN DE CONTACTO PRINCIPAL -->
+      <section class="contact-main-section py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="contact-header text-center mb-5">
+                <h1 class="display-4 text-white">Contáctanos</h1>
+                <p class="lead text-light">¿Tienes alguna pregunta? Estamos aquí para ayudarte.</p>
+              </div>
+              <div class="contact-content-wrapper">
+  <form class="card p-4 custom-contact-form" action="https://formspree.io/f/mdkzkvww" method="POST">
+    
+    <div class="form-group">
+      <label for="name" class="text-white">Nombre</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email" class="text-white">Email</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message" class="text-white">Mensaje</label>
+      <textarea class="form-control" id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-outline-light btn-block mt-3">Enviar</button>
+    <p id="form-status" class="text-white mt-3"></p>
+  </form>
+</div>
+                <!-- INFORMACIÓN ADICIONAL -->
+                <div class="contact-info-box mt-5">
+                  <div class="row">
+                    <div class="col-md-4 mb-4">
+                      <div class="info-item p-3 text-center">
+                        <i class="fas fa-map-marker-alt fa-2x mb-3"></i>
+                        <h4>Dirección</h4>
+                        <p>Córdoba 1055 - Merlo </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <div class="info-item p-3 text-center">
+                        <i class="fas fa-phone fa-2x mb-3"></i>
+                        <h4>Teléfono</h4>
+                        <p>(0220) 482 0799</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <div class="info-item p-3 text-center">
+                        <i class="fas fa-envelope fa-2x mb-3"></i>
+                        <h4>Email</h4>
+                        <p>escueladeinformatica@uno.edu.ar</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+      </section>
+<footer id="contact" class="bg-dark">
+  <div class="container">
+   <!-- Sección Informativa -->
+    <div class="row ">
+      <div class="col-md-4">
+        <h5>Información</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none ">Sobre nosotros</a></li>
+          <li><a href="#" class="text-decoration-none">Empleos</a></li>
+          <li><a href="#" class="text-decoration-none ">Prensa</a></li>
+          <li><a href="#" class="text-decoration-none ">Afiliados</a></li>
+          <li><a href="#" class="text-decoration-none ">Información corporativa</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Categorías</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none">Ejercicio</a></li>
+          <li><a href="#" class="text-decoration-none ">Gimnasio y fitness</a></li>
+          <li><a href="#" class="text-decoration-none">Nutrición</a></li>
+          <li><a href="#" class="text-decoration-none ">Aire libre</a></li>
+          <li><a href="#" class="text-decoration-none ">Entrenamiento de fuerza</a></li>
+          <li><a href="#" class="text-decoration-none ">Suplementos</a></li>
+          <li><a href="#" class="text-decoration-none ">Deportes en equipo</a></li>
+          <li><a href="#" class="text-decoration-none ">Entrenamiento y deporte</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Ayuda</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none ">Estado del pedido</a></li>
+          <li><a href="#" class="text-decoration-none ">Envío y entrega</a></li>
+          <li><a href="#" class="text-decoration-none ">Devoluciones</a></li>
+          <li><a href="#" class="text-decoration-none ">Opciones de pago</a></li>
+          <li><a href="#" class="text-decoration-none ">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
+   <!-- Línea blanca -->
+<hr style="border: none; border-top: 2px solid #ffffff; margin-top: 2rem; margin-bottom: 1rem;">
+<!-- Contenedor principal -->
+<div class="contact-map-info-wrapper">
+  <!-- Mapa -->
+  <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.271716471293!2d-58.70225382489539!3d-34.67309116116411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc07979e48029%3A0x26e49dba38d4c77!2sUno!5e0!3m2!1ses!2sar!4v1747325092100!5m2!1ses!2sar" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  </div>
+<!-- Copyright -->
+<div class="copyright-icons-container" id="contacto">
+  <p class="mb-0 text-center text-md-start">&copy; 2025 UNO. Todos los derechos reservados.</p>
+  <div class="text-center text-md-end">
+    <a href="https://wa.me/5491234567890" class="text-light me-3"><i class="bi bi-whatsapp"></i></a>
+    <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+    <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+  </div>
+</div>
+</div>
+</footer>
+
+    <!-- SCRIPTS -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navbarCollapse = document.getElementById('navbarMenu');
+    if (!navbarCollapse) return;
+
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+
+    document.querySelectorAll('#navbarMenu .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navbarCollapse.classList.contains('show')) {
+          bsCollapse.hide();
+        }
+      });
+    });
+
+    const searchToggles = document.querySelectorAll('.search-icon');
+    searchToggles.forEach(toggle => {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        const container = this.closest('.search-container');
+        if (container) {
+          if (container.classList.contains('d-none')) {
+            container.classList.remove('d-none');
+            void container.offsetWidth;
+            container.classList.add('show');
+          } else {
+            container.classList.remove('show');
+            setTimeout(() => {
+              container.classList.add('d-none');
+            }, 600);
+          }
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+  window.sr = ScrollReveal();
+
+  sr.reveal('.navbar', {
+    duration: 2000,
+    origin: 'bottom'
+  });
+
+  sr.reveal('.header-img', {
+    duration: 2000,
+    origin: 'top',
+    distance: '200px'
+  });
+
+  sr.reveal('.text-box-right', {
+    duration: 1800,
+    origin: 'right',
+    distance: '250px',
+    easing: 'ease-in-out',
+    opacity: 0,
+    delay: 300
+  });
+
+  sr.reveal('.text-box-left', {
+    duration: 1800,
+    origin: 'left',
+    distance: '250px',
+    easing: 'ease-in-out',
+    opacity: 0,
+    delay: 300
+  });
+
+  sr.reveal('#testimonial div', {
+    duration: 2000,
+    origin: 'left',
+    distance: '300px',
+    viewFactor: 0.2
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+<script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/js/main.js"></script>
+    <!-- Bootstrap JS (activa el botón hamburguesa) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+    </body>
+</html>

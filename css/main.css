@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #fff; /* laterales blancos */
+  background-color: #fff; 
   font-family: "Montserrat-Black", sans-serif;
   font-weight: 900;
   overflow-x: hidden;
@@ -12,10 +12,10 @@ html, body {
 .page-wrapper {
   max-width: 1150px;
   margin: 0 auto;
-  background-color: #000; /* hoja negra centrada */
+  background-color: #000;
   padding: 0 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* efecto de hoja flotante */
-  padding-top: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  padding-top: 0.9rem;
 }
 
 /* ===== NAVBAR GENERAL ===== */
@@ -25,23 +25,22 @@ html, body {
   left: 0;
   width: 100%;
   z-index: 1050;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
-/* Para cambiar el color de hover */
+
 .navbar-center .nav-link:hover {
-  color: #61abff ; /* Rojo como ejemplo */
+  color: #61abff ;
 }
 
-/* Para hacer los efectos más sutiles */
 .navbar-icons i:hover {
-  transform: scale(1.1); /* Escala más pequeña */
+  transform: scale(1.1); 
 }
 /* ===== LOGO ===== */
 .logo-icon {
-  color: #000;
+  color: #ffffff;
   font-size: 1.4rem;
   transform: rotate(90deg);
   transition: transform 0.3s ease, color 0.3s ease;
@@ -60,7 +59,7 @@ html, body {
 }
 
 .navbar-toggler-icon {
-  filter: invert(0);
+  filter: invert(1);
 }
 
 .navbar-toggler:focus,
@@ -81,7 +80,7 @@ html, body {
 }
 
 .navbar-center .nav-link {
-  color: #000;
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -139,6 +138,51 @@ html, body {
   color: #000;
   font-size: 0.9rem;
 }
+/* ===== ESTILO CUANDO SE HACE SCROLL ===== */
+.navbar-custom.scrolled {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-custom.scrolled .nav-link,
+.navbar-custom.scrolled .navbar-icons i,
+.navbar-custom.scrolled .navbar-icons,
+.navbar-custom.scrolled .navbar-icons-mobile,
+.navbar-custom.scrolled .logo-icon {
+  color: #000 ;
+}
+
+.navbar-custom.scrolled .navbar-toggler-icon {
+  filter: invert(0); 
+}
+
+.navbar-custom .logo-icon {
+  color: #fff;
+}
+
+.navbar-custom.scrolled .logo-icon {
+  color: #000;
+}
+.navbar-custom .navbar-icons i,
+.navbar-custom .navbar-icons {
+  color: #fff ;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom.scrolled .navbar-icons i,
+.navbar-custom.scrolled .navbar-icons {
+  color: #000 ;
+}
+
+.navbar-custom .navbar-icons-mobile i,
+.navbar-custom .navbar-icons-mobile {
+  color: #fff ;
+}
+
+.navbar-custom.scrolled .navbar-icons-mobile i,
+.navbar-custom.scrolled .navbar-icons-mobile {
+  color: #000 ;
+}
 
 /* ===== ÍCONOS MÓVIL (<992px) ===== */
 .navbar-icons-mobile {
@@ -146,29 +190,29 @@ html, body {
   flex-direction: column;
   align-items: center;
   gap: 1.3rem;
-  color: #000;
+  color: #000000;
   font-size: 0.9rem;
 }
 
 /* ===== NUEVOS ESTILOS PARA CENTRAR EN DESKTOP (≥992px) ===== */
 @media (min-width: 992px) {
-  /* Contenedor principal - Estructura Flexbox */
+  
   .navbar-custom .container-fluid {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3rem; /* Espacios laterales */
+    padding: 0 3rem; 
     
   }
 @media (min-width: 992px) {
   .navbar-custom {
-    height: 3.5rem; /* Altura deseada (ej: 80px, 100px, 120px) */
+    height: 3.5rem; 
   }}
 
   /* Logo - Fijo a la izquierda */
   .navbar-logo {
     flex: 0 0 auto;
-    margin-right: auto; /* Empuja todo lo demás a la derecha */
+    margin-right: auto; 
   }
 
   /* Menú - Centrado absoluto */
@@ -181,19 +225,19 @@ html, body {
   /* Íconos - Fijos a la derecha */
   .navbar-icons {
     flex: 0 0 auto;
-    margin-left: auto; /* Empuja hacia la derecha */
+    margin-left: auto; 
   }
 
-  /* Ajuste para el buscador (evita que "empuje") */
+  
   .search-container {
-    width: 1.1rem; /* Ancho inicial reducido */
-    margin-right: 0.1rem; /* Espacio extra */
+    width: 1.1rem; 
+    margin-right: 0.1rem; 
   }
 }
 
 /* ===== ESTILOS EXISTENTES PARA MÓVIL (<992px) ===== */
 @media (max-width: 991.98px) {
-  /* Estructura base */
+  
   .container-fluid {
     flex-wrap: wrap;
   }
@@ -237,7 +281,6 @@ html, body {
 
 }
 
-
 @media (min-width: 768px) {
   .header-img {
     max-width: 80%;
@@ -249,8 +292,6 @@ html, body {
     max-width: 70%;
   }
 }
-
-
 
 .header-btn {
   color: #ffffff;
@@ -268,8 +309,6 @@ html, body {
   transform: translateY(-2px);
 }
 
-
-
 .text-box-right,
 .text-box-left {
   padding: 2rem;
@@ -280,7 +319,7 @@ html, body {
 }
 .text-box-right h1,
 .text-box-left h1 {
-  color: #ffffff; /* Blanco puro para destacar en fondo negro */
+  color: #ffffff; 
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
@@ -291,7 +330,7 @@ html, body {
 
 .text-box-right p,
 .text-box-left p {
-  color: #dddddd; /* Gris claro, más suave que el blanco */
+  color: #dddddd; 
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 1.1rem;
@@ -301,12 +340,11 @@ html, body {
 
 /* ===== FOOTER GENERAL ===== */
 footer {
-  background-color: #383838; /* Gris oscuro */
+  background-color: #383838; 
   color: #eee;
-  padding: 3rem 0;
+  padding:1rem 0;
   font-family: 'Montserrat', sans-serif;
 }
-
 
 footer h5 {
   font-size: 1.1rem;
@@ -333,68 +371,12 @@ footer ul li a:hover {
   color: #61abff;
 }
 
-.form-map-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 3rem;
-  align-items: stretch;
-}
-
-@media (min-width: 992px) {
-  .form-map-wrapper {
-    flex-direction: row;
-    
-  }
-
-  .map-container,
-  .custom-contact-form {
-    flex: 1;
-    max-width: 35%; /* menos ancho que antes */
-  }
-}
-
-/* Mapa con menos altura */
-.map-container {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.25);
-  min-height: 120px; /* antes 300, ahora más bajo */
-}
-
-/* Altura fija para móviles */
-@media (max-width: 991.98px) {
-  .map-container {
-    height: 120px; /* menos alto */
-  }
-}
-
-.map-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-}
-
-/* Formulario más compacto */
-.custom-contact-form {
-  background-color: #1a1a1a;
-  border-radius: 8px;
-  padding: 1.5rem;
-  max-width: 100%;
-  /* Quitar width y max-width fijo */
-  flex: 1; /* que tome el espacio proporcional */
-  box-shadow: 0 0 10px rgba(0,0,0,0.25);
-}
-
-
 /* Botón más pequeño */
 .custom-contact-form button {
-  padding: 0.4rem 0;
+  padding: 0.rem 0;
   font-size: 0.95rem;
   margin-top: 1rem;
 }
-
 
 /* Inputs */
 .custom-contact-form .form-control {
@@ -430,28 +412,23 @@ footer ul li a:hover {
 }
 
 
-
 /* Por defecto: columna (vertical) */
 footer .copyright-icons-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem; /* separación entre texto e íconos */
+  gap: 1rem; 
   padding: 1rem 0;
 }
-
 .copyright-icons-container a {
   color: #ffffff;
   transition: color 0.3s ease, transform 0.3s ease;
 }
-
 .copyright-icons-container a:hover .bi-whatsapp { color: #25D366; }   /* Verde */
 .copyright-icons-container a:hover .bi-facebook { color: #1877F2; }   /* Azul Facebook */
 .copyright-icons-container a:hover .bi-instagram { color: #C13584; }  /* Rosa Instagram */
 .copyright-icons-container a:hover .bi-twitter { color: #1DA1F2; }    /* Azul Twitter */
-
-
 
 /* A partir de 768px: fila (horizontal) */
 @media (min-width: 768px) {
@@ -465,12 +442,9 @@ footer .copyright-icons-container {
     margin: 0;
   }
 }
-
-
-
 /* ===== SECCIÓN TESTIMONIAL ===== */
 #testimonial {
-  padding: 60px 0;
+  padding:0 0 4rem;
 }
 
 #testimonial .testimonial-background {
@@ -595,14 +569,11 @@ footer .copyright-icons-container {
     max-width: 95%;
   }
 }
-
-
 /* ===== SECCIÓN WINTER ===== */
-
 /* CONTENEDOR GENERAL */
 .winter-container {
-  background-color: #121212; /* fondo oscuro */
-  color: #f0f0f0; /* texto claro */
+  background-color: #121212;
+  color: #f0f0f0;
   padding: 4rem 2rem;
   font-family: 'Montserrat', sans-serif;
 }
@@ -620,7 +591,7 @@ footer .copyright-icons-container {
 /* IMÁGENES */
 .winter-img-col {
   width: 100%;
-  height: 500px; /* altura fija para todas las imágenes */
+  height: 500px; 
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.7);
@@ -632,7 +603,7 @@ footer .copyright-icons-container {
 .winter-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* corta la imagen para llenar el contenedor sin deformar */
+  object-fit: cover; 
   transition: transform 0.5s ease;
 }
 
@@ -664,7 +635,7 @@ footer .copyright-icons-container {
   font-size: 2.3rem;
   margin-bottom: 2rem;
   line-height: 1.4;
-  white-space: pre-line; /* para respetar saltos de línea */
+  white-space: pre-line; 
   color: #cccccc;
 }
 
@@ -701,5 +672,322 @@ footer .copyright-icons-container {
   
   .winter-text-wrapper {
     max-width: 100%;
+  }
+}
+
+
+#image-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh; 
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-modal .modal-content {
+  position: relative;
+  max-width: 75vw;  
+  max-height: 75vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
+  background: transparent; 
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) and (min-height: 850px) {
+  #image-modal .modal-content {
+    transform: translateY(-35%);
+  }
+}
+
+
+#modal-img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease-in-out;
+  user-select: none;
+}
+
+/* Botón cerrar */
+#modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+#modal-close:hover {
+  background: #61abff;
+  color: white;
+}
+
+/* Contacto */
+.contact-main-section {
+  background-color: #000;
+}
+
+.contact-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-header p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #ccc;
+}
+
+.contact-content-wrapper {
+  background-color: #121212;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* Formulario ampliado */
+.contact-main-section .custom-contact-form {
+  background-color: #1a1a1a;
+  border: none;
+  max-width: 100%;
+}
+
+.contact-main-section .custom-contact-form .form-control {
+  background-color: #222;
+  border: 1px solid #444;
+}
+
+.contact-info-box .info-item {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* Tarjeta de información */
+.contact-info-card {
+  flex: 1;
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-btn {
+  margin-top: 1.5rem;
+  align-self: center;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #61abff;
+  color: #000;
+}
+/* Contenedor principal responsivo */
+.map-responsive-container {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+/* Ajustes específicos para móviles */
+@media (max-width: 767.98px) {
+  .map-container {
+    padding-top: 100%; 
+  }
+  
+  .map-container iframe {
+    transform: none; 
+  }
+}
+/* Responsive */
+@media (max-width: 991.98px) {
+  .map-container {
+    min-height: 250px;
+  }
+  
+  .contact-info-card {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-info-item {
+    font-size: 0.9rem;
+  }
+  
+  .contact-btn {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+.contact-info-box .info-item:hover {
+  transform: translateY(-5px);
+  background-color: #222;
+}
+
+.contact-info-box i {
+  color: #61abff;
+}
+
+.contact-info-box h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info-box p {
+  color: #ccc;
+  margin-bottom: 0;
+}
+
+
+
+.contact-info-card p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info-card p, 
+.contact-info-box .info-item p {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+.contact-info-card i {
+  color: #61abff;
+  width: 20px;
+  text-align: center;
+}
+
+/* Tarjeta de información */
+.contact-info-card h3 {
+  color: #61abff;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.contact-info-item i {
+  color: #61abff;
+  min-width: 20px;
+  text-align: center;
+}
+
+.contact-btn {
+  margin-top: 1.5rem;
+  align-self: center;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #61abff;
+  color: #000;
+}
+
+/* Responsive */
+.contact-map-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Versión desktop */
+@media (min-width: 992px) {
+  .contact-map-info-wrapper {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  
+  .map-container {
+    flex: 2; 
+    min-height: 400px;
+  }
+  
+  .contact-info-card {
+    flex: 1; 
+  }
+}
+/* Contenedor del mapa */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Tarjeta de contacto */
+.contact-info-card {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Ajustes para móvil */
+@media (max-width: 991.98px) {
+  .map-container {
+    padding-bottom: 75%; 
+    min-height: 250px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-info-item {
+    font-size: 0.9rem;
+  }
+  
+  .contact-btn {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
   }
 }
